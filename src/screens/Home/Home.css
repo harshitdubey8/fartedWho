@@ -110,7 +110,7 @@
 /* Result section styling */
 .result {
   justify-content: center;
-  height: 100%;
+
   text-align: center;
   align-items: center;
   display: flex;
@@ -189,4 +189,32 @@
     transform: translateY(-20px);
     text-shadow: 0 50px 0 #000, 0 0px 20px rgba(0, 0, 0, 0.8);
   }
+}
+
+.result-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+  width: 100%;
+  text-wrap: nowrap;
+}
+
+.action-button {
+  background-color: #232323;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.action-button:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: #118ec8;
+  color: #fff;
 }
