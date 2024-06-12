@@ -60,11 +60,14 @@ const Home = () => {
 
   return (
     <div className="home">
+      <div className="header">
+        <p>FartedWho.fart</p>
+      </div>
       {!showResults && (
         <>
           <h2 className="home-heading">See who Farted ?</h2>
           <p className="home-sub-heading">
-            Clear the confusion let the universe decide for you
+            Stop the blame game—let fate reveal the culprit!
           </p>
 
           <form onSubmit={handleSubmit} className="form-group">
@@ -85,7 +88,7 @@ const Home = () => {
             ))}
 
             {data.length < 6 && (
-              <button onClick={addFriend}>Add Another Friend</button>
+              <button onClick={addFriend}>Add Suspect</button>
             )}
             <div className="bottom-button">
               <button
@@ -101,10 +104,10 @@ const Home = () => {
       )}
       {showResults && (
         <div className="result">
-          <h3 className="home-heading">Fellow Farted Is !</h3>
+          <h3 className="home-heading">Fellow has farted!</h3>
 
           <h2 className="winner-name">{guyFarted}</h2>
-          <p className="home-sub-heading">Dude !!! Ewww Broo !! </p>
+          <p className="home-sub-heading">Hey dude, gross! Bro, seriously!</p>
           <button className="submit-button back-button " onClick={goBack}>
             Go Back
           </button>
