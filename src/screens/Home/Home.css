@@ -172,23 +172,28 @@
   }
 }
 
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 10px #fff, 0 0 20px rgba(0, 0, 0, 0.7);
+  }
+  50% {
+    transform: scale(1.1);
+    text-shadow: 0 0 20px #fff, 0 0 30px rgba(0, 0, 0, 0.7);
+  }
+  100% {
+    transform: scale(1);
+    text-shadow: 0 0 10px #fff, 0 0 20px rgba(0, 0, 0, 0.7);
+  }
+}
+
 .result h2 {
   color: #eee;
   padding-top: 30px;
-
   text-align: center;
   font-size: 70px;
   padding-bottom: 50px;
-  -webkit-animation: bounce 0.4s ease infinite alternate;
-}
-@-webkit-keyframes bounce {
-  0% {
-    text-shadow: 0 5px 0 #ccc, 0 2px 3px rgba(0, 0, 0, 1);
-  }
-  100% {
-    transform: translateY(-20px);
-    text-shadow: 0 50px 0 #000, 0 0px 20px rgba(0, 0, 0, 0.8);
-  }
+  -webkit-animation: pulse 2s infinite;
 }
 
 .result-buttons {
